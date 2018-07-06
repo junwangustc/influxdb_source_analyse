@@ -194,6 +194,6 @@ influxdb源码解析【 文章版权归本人所有，欢迎转载，但未经�
       ||uuid|||
       
       
-    ### 程序启动流程和数据结构
+    ### 集群读写架构图（v0.11）
     
-    
+![Image text](https://github.com/junwangustc/influxdb_source_analyse/raw/master/influxdb.png)
