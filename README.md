@@ -1,5 +1,5 @@
 # influxdb_source_analyse
-influxdb源码解析
+influxdb源码解析【 文章版权归本人所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文链接，否则保留追究法律责任的权利。】
 # 时序数据库背景介绍
    ### 时序数据库遇到的挑战
    ```
@@ -150,9 +150,50 @@ influxdb源码解析
   
   
   
-  ### 
+
   
+  ### 代码框架
   
-  文章版权归本人所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文链接，否则保留追究法律责任的权利。
+
+  -  influxdb source code （v0.11 & v0.12）
   
-  
+      |一级目录|二级目录|三级目录|四级目录|
+      |:-|:-|:-|:-|
+      |influxdb|cmd|influx|名称|
+      |||influxd||
+      |||influx-tsm||
+      |||influx-stress||
+      |||influx-inspect||
+      ||services|admin||
+      |||httpd||
+      |||collectd||
+      |||cq||
+      |||copier||
+      |||suscriber||
+      |||graphite||
+      |||meta||
+      |||openTSDB||
+      |||snapshotter||
+      |||precreator||
+      |||udp||
+      |||retention||
+      ||client|||
+      ||cluster|||
+      ||etc|||
+      ||importer|||
+      ||influxql|||
+      ||models|||
+      ||monitor|||
+      ||pkg|||
+      ||scripts|||
+      ||monitor|||
+      ||stress|||
+      ||tcp|||
+      ||toml|||
+      ||tsdb|||
+      ||uuid|||
+      
+      
+    ### 程序启动流程和数据结构
+    
+    
